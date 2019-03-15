@@ -1,0 +1,545 @@
+/*  reset styles */
+        @import url('https://fonts.googleapis.com/css?family=Quicksand');
+        @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Quicksand');
+        @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Kaushan+Script|Quicksand');
+        @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Kaushan+Script|Poiret+One|Quicksand');
+        @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Raleway:200i');
+        @import url('https://fonts.googleapis.com/css?family=Caveat|Dancing+Script|Indie+Flower|Raleway:200i');
+
+
+
+
+			html, body{ 
+				width:100%; height:100%;
+				margin:0; padding:0; 
+			}
+			body *{ 
+				margin:0; padding:0; 
+				box-sizing:border-box;
+			}
+			a{ text-decoration:none;  }
+			ol, ul{ list-style-type:none; }
+            body{
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;        
+            }
+            .sl{
+                position: absolute;
+                z-index: -1;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;     
+            }            
+            .slUcitavanje{ visibility: hidden;}
+            .sl1{background-image: url("sajt03.JPG");}   
+            .sl2{background-image: url("sajt02.jpg");}
+            .sl3{ background-image: url("voce.JPG");}
+            .sl4{ background-image: url("sajt05.JPG");}            
+            #logo{ 
+                width: 200px;
+                margin-left: 2em;
+                margin-top: 1em;  
+                cursor: pointer;
+                z-index: 100; 
+                position: relative;            
+            }           
+            #menuButton{  
+                float:right;
+                margin-top: 64px;
+                margin-right: 120px;             
+                display: inline-block;
+                width:40px; height:40px;
+                z-index: 100;
+                position: relative;
+            }
+            #menuButton div{
+                border-top: white solid 2px;
+                width:100%;
+                margin-top:6px; height:1px;
+                transition: transform .6s, opacity .3s;
+                border-color: white;
+                opacity: 0.6;
+               /* transition: opacity .2s ease-in-out;*/
+            }
+            #menuButton:hover div.line1{
+                transform:translate(0, 6px) rotate(180deg);
+            }
+            #menuButton:hover div.line3{
+                transform:translate(0, -6px) rotate(-90deg);
+            }
+            #menuButton:hover div.line2{
+                opacity:0;
+            }
+            .arrow {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                margin-top: -35px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+            }
+            #arrow-left {
+                border-width: 30px 40px 30px 0;
+                border-color: transparent #fff transparent transparent;
+                opacity: 0.3;
+                left: 0;
+                margin-left: 30px;               
+            }
+            #arrow-left:hover {
+                opacity: 0.8;
+                transition: opacity .5s ease-in-out;
+            }
+            #arrow-right {
+                border-width: 30px 0 30px 40px;
+                border-color: transparent transparent transparent #fff;
+                opacity: 0.3;
+                right: 0;
+                margin-right: 30px;
+            }
+            #arrow-right:hover{
+                opacity: 0.8;
+                transition: opacity .5s ease-in-out;
+            }            
+            #menu{
+                background-image: url("menu_image.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                width: 100%;   
+                position: fixed;
+                z-index: 1;          
+            }
+            .flexContainer {
+                display: flex;
+                flex-direction: column;                   
+            }
+            .flexContainer img{
+                width: 300px;
+                line-height: 300px;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                cursor: pointer;       
+            }
+            .flexContainer > div{
+                display: flex;
+                flex-direction: column;  
+                width: 300px;  
+                line-height: 50px;
+                padding: 25px; 
+                margin-left: auto;
+                margin-right: auto;   
+                justify-content: center;
+                text-align: center;
+                color:rgb(204, 204, 204);
+                font-family: 'Caveat', cursive;
+                font-size: 40px;
+                text-shadow: 1px 1px 1px rgb(36, 36, 36);                
+            }
+            .flexContainer div a{
+                color: white;
+            }
+            .flexContainer div.links{
+                flex-direction: row;
+                margin-top: 40px;
+            }
+            .links span{
+                padding: 0 20px;
+            }
+            .links span a i:hover{
+                opacity: 0.5;
+                transition: opacity .5s ease-in-out;
+            }
+            #clickHome:hover, #clickAbout:hover, #clickCakes:hover,#clickDecorations:hover,#clickContact:hover {
+                opacity: 0.5;
+                transition: opacity .5s ease-in-out;
+            }   
+            #aboutContainer{
+                position: absolute;
+                height: 80vh;
+                width: 100%;
+                top:0;
+                left: 0;
+                background:white;
+                background-image: url("about.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .titleSubtitleContainer{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: auto;
+                margin: 0 auto;
+                width: 50%;  
+                height: 100%;
+                line-height: 50px;               
+            }
+            .titleHolder{              
+                margin-top: 40%;
+                background-color: transparent;
+            }
+            .titleSeparator{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                vertical-align: middle;
+                margin: 23px 0 30px;
+            }
+            .titleSeparator::before{
+                content: " ";
+                position: absolute;
+                display: block;
+                width: 400px;
+                top: 0;
+                left: 0;
+                border-top: 2px solid white;
+            }
+            .titleHolder span{
+                color: white;
+                font-size: 50px;
+                font-family: 'Caveat', cursive;
+                text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+            }
+            .pageSubtitle span{
+                font-size: 30px;
+                font-family: 'Caveat', cursive;
+                text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+            }
+            #aboutGalleryContainer{
+                position: ;
+                background-color: #fff;
+                width: 100%;
+                height: 100%;
+            }
+            #aboutFlexContainer{
+                display: flex; 
+                justify-content: center;         
+            }
+            .aboutFlexGallery{
+                margin-top: 100px;
+            }
+            .aboutFlexGallery h1{
+                font-size: 60px;
+                font-family: 'Caveat', cursive;
+                text-align: center;
+            }
+            .aboutFlexGallery p{
+                font-size: 40px;
+                font-family: 'Caveat', cursive;
+                margin-top: 100px;
+            }
+             #cakesContainer{
+                position: absolute;
+                height: 90vh;
+                width: 100%;
+                top:0;
+                left: 0;
+                background-image: url("Chocolate_star_026.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .cakesTitleSubtitleContainer{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: auto;
+                margin: 0 auto;
+                width: 50%;  
+                height: 100%;
+                line-height: 50px;               
+            }
+            .cakesTitleHolder{              
+                margin-top: 30%;
+                background-color: transparent;
+            }
+            .cakesTitleSeparator{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                vertical-align: middle;
+                margin: 23px 0 30px;
+            }
+            .cakesTitleSeparator::before{
+                content: " ";
+                position: absolute;
+                display: block;
+                width: 400px;
+                top: 0;
+                left: 0;
+                border-top: 2px solid white;
+            }
+            .cakesTitleHolder span{
+                color: white;
+                font-size: 50px;font-family: 'Caveat', cursive;
+                text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+            }
+            .cakesPageSubtitle span{
+                font-size: 30px;
+                text-shadow: 1px 1px 1px rgb(36, 36, 36); 
+            }
+            #cakesGalleryContainer{
+                background-color: #fff;
+                width: 100%;
+            }
+            #cakesFlexContainer{
+                display: flex; 
+                justify-content: center;         
+            }
+            .flexGallery{
+                display: flex;
+                margin-top: 40px;
+            }
+            .flexGallery div{
+                flex: 1;
+                background-color: #f1f1f1;
+                margin: 20px;
+                text-align: center;
+                line-height: 75px;
+                font-family: 'Caveat', cursive;
+                font-size: 40px;
+            }
+            .flexGallery div img{
+                max-width: 100%;
+                height: auto;
+                border: 1px solid rgb(182, 182, 182);
+                border-radius: 5px;
+                padding: 5px;
+            }
+            .flexGallery div:hover {                    
+                opacity: 0.7; 
+                transition: opacity .5s ease-in-out;        
+            }
+            footer{
+                text-align: center;
+                color: #CCCCCC;
+            }
+            footer #zag123{
+                width: 100%;
+                height: 350px;
+                background-color:black;           
+            }  
+            footer div span a{
+                color: #CCCCCC;
+            }
+            footer div img{
+                height: 220px;
+                color: #CCCCCC;
+                margin-top: 30px;
+            }
+
+
+
+
+
+
+
+            #decorationsContainer{
+                position: absolute;
+                height: 90vh;
+                width: 100%;
+                top:0;
+                left: 0;
+                background:white;
+                background-image: url("dekoracija15.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .decorationsTitleSubtitleContainer{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: auto;
+                margin: 0 auto;
+                width: 50%;  
+                height: 100%;
+                line-height: 50px;               
+            }
+            .decorationsTitleHolder{              
+                vertical-align: middle;
+                background-color: transparent;
+            }
+            .decorationsTitleSeparator{
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                vertical-align: middle;
+                margin: 23px 0 30px;
+            }
+            .decorationsTitleSeparator::before{
+                content: " ";
+                position: absolute;
+                display: block;
+                width: 400px;
+                top: 0;
+                left: 0;
+                border-top: 1px solid #c9a74d;
+            }
+            .decorationsTitleHolder span{
+                color: #c9a74d;
+                font-size: 40px;
+            }
+            .decorationsPageSubtitle span{
+                font-size: 20px;
+            }
+           
+            #decorationsGalleryContainer{
+                background-color: #fff;
+                /* width: 1500px; */
+                height: 1050px;
+                margin:0 auto;
+                margin-top: 30px;
+            }
+            #decorationsFlexContainer{
+                display: flex; 
+                flex-wrap: wrap;
+                padding: 0 5px;        
+            }
+            .decorationsGallery{
+                flex: 25%;
+                max-width: 25%;
+                padding: 0 5px;
+                overflow: hidden;
+            }
+            .decorationsGallery img{
+                margin-top: 8px;
+                vertical-align: middle;
+                transition: 2s;
+            }
+            .decorationsGallery img:hover{
+                transform: scale(1.1);
+              }
+            @media (max-width: 800px) {
+                .decorationsGallery {
+                  flex: 50%;
+                  max-width: 50%;
+                }
+            }
+            @media (max-width: 600px) {
+                .decorationsGallery {
+                  flex: 100%;
+                  max-width: 100%;
+                }
+            }
+            .opacity {
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0,0,0,.5);
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            .gallery {
+                position: fixed;
+                width: 80vw;
+                height: 80vh;
+                top: 10vh;
+                left: 10vw;
+                background: black;
+            }
+            .gallery .close {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                color: #ffffff;
+                font-size: 20px;
+            }
+            .gl-arrow-left {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 40px;
+                height: 40px;
+                border: 0;
+                font-size: 30px;
+                text-align: center;
+            }
+            .gl-arrow-right {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 40px;
+                height: 40px;
+                border: 0;
+                font-size: 30px;
+                text-align: center;
+            }
+            .gl {
+                position: absolute;
+                z-index: -1;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+            .svadbene.gl1 {
+                background-image: url("cheese.jpg");
+            }
+            .svadbene.gl2 {
+                background-image: url("MarijaNebojsa--349.jpg");
+            }
+            .svadbene.gl3 {
+                background-image: url("Chocolate_star_063.jpg");
+            }
+            .svadbene.gl4 {
+                background-image: url("MarijaNebojsa--362.jpg");
+            }
+            .rodjendanske.gl1 {
+                background-image: url("Anne-and-Ognjen-370.jpg");
+            }
+            .rodjendanske.gl2 {
+                background-image: url("MarijaNebojsa--349.jpg");
+            }
+            .rodjendanske.gl3 {
+                background-image: url("Chocolate_star_063.jpg");
+            }
+            .rodjendanske.gl4 {
+                background-image: url("cheese.jpg");
+            }
+            .deserti.gl1 {
+                background-image: url("cheese.jpg");
+            }
+            .deserti.gl2 {
+                background-image: url("MarijaNebojsa--349.jpg");
+            }
+            .deserti.gl3 {
+                background-image: url("Chocolate_star_063.jpg");
+            }
+            .deserti.gl4 {
+                background-image: url("MarijaNebojsa--362.jpg");
+            }
+            .sitni.gl1 {
+                background-image: url("cheese.jpg");
+            }
+            .sitni.gl2 {
+                background-image: url("MarijaNebojsa--349.jpg");
+            }
+            .sitni.gl3 {
+                background-image: url("Chocolate_star_063.jpg");
+            }
+            .sitni.gl4 {
+                background-image: url("MarijaNebojsa--362.jpg");
+            }
+        
